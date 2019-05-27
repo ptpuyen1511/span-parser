@@ -397,6 +397,7 @@ class Network(object):
         batch_size,
         train_data_file,
         dev_data_file,
+        test_data_file,
         model_save_file,
         droprate,
         unk_param,
@@ -447,6 +448,9 @@ class Network(object):
 
         dev_trees = PhraseTree.load_treefile(dev_data_file)
         print('Loaded {} validation trees!'.format(len(dev_trees)))
+        
+        test_trees = PhraseTree.load_treefile(test_data_file)
+        print('Loaded {} test trees!'.format((len(test_trees)))
 
         best_acc = FScore()
 
