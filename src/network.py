@@ -450,7 +450,7 @@ class Network(object):
         print('Loaded {} validation trees!'.format(len(dev_trees)))
         
         test_trees = PhraseTree.load_treefile(test_data_file)
-        print('Loaded {} test trees!'.format((len(test_trees)))
+        print('Loaded {} test trees!'.format(len(test_trees)))
 
         best_acc = FScore()
 
