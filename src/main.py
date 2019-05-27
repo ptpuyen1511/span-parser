@@ -169,6 +169,7 @@ if __name__ == '__main__':
         print('    (Use -h or --help flag for full option list.)')
         sys.exit()
 
+    """
     if args.test is not None:
         from phrase_tree import PhraseTree
         from network import Network
@@ -180,7 +181,8 @@ if __name__ == '__main__':
         print('Loaded model from: {}'.format(args.model))
         accuracy = Parser.evaluate_corpus(test_trees, fm, network)
         print('Accuracy: {}'.format(accuracy))
-    elif args.train is not None:
+    """
+    if args.train is not None:
         from network import Network
 
         if args.np_seed is not None:
