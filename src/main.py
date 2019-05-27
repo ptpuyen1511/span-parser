@@ -199,6 +199,7 @@ if __name__ == '__main__':
             batch_size=args.batch_size,
             train_data_file=args.train,
             dev_data_file=args.dev,
+            test_data_file=args.test,
             model_save_file=args.model,
             droprate=args.droprate,
             unk_param=args.unk_param,
