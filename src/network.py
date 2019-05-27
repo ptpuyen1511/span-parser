@@ -549,3 +549,6 @@ class Network(object):
             runmins = (current_time - start_time)/60.
             print('  Elapsed time: {:.2f}m'.format(runmins))
 
+        test_acc = Parser.evaluate_corpus(test_trees, fm, network)
+        print('[Test: {}]'.format(test_acc))
+
